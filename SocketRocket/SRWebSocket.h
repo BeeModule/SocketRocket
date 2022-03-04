@@ -126,6 +126,9 @@ extern NSString *const SRHTTPResponseErrorKey;
 #pragma mark - Constructors
 ///--------------------------------------
 
+- (int)closeCode;
+- (NSString *)closeReason;
+
 /**
  Initializes a web socket with a given `NSURLRequest`.
 

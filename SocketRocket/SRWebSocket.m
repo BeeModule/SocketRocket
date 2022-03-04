@@ -146,6 +146,14 @@ NSString *const SRHTTPResponseErrorKey = @"HTTPResponseStatusCode";
 #pragma mark - Init
 ///--------------------------------------
 
+- (int)closeCode {
+    return _closeCode;
+}
+
+- (NSString *)closeReason {
+    return _closeReason;
+}
+
 - (instancetype)initWithURLRequest:(NSURLRequest *)request protocols:(NSArray<NSString *> *)protocols securityPolicy:(SRSecurityPolicy *)securityPolicy
 {
     self = [super init];
